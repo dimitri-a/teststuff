@@ -14,16 +14,22 @@ export default class List extends Component {
 
         return (
             <div>
+                {/*header*/}
                 <div className='row main'>
-
                     <h1>{this.props.employees.companyInfo.companyName}</h1>
-
                     <h3 className='col-lg-6'>{this.props.employees.companyInfo.companyMotto}</h3>
                     <h3 className='col-lg-6 text-right'>Since {Date(this.props.employees.companyInfo.companyEst)}</h3>
                 </div>
-                <div className="row">
-                    <div>
-                        {display}
+
+
+                {/*Employee list*/}
+                <div>
+                    <h3>Our Employees</h3>
+                    <hr/>
+                    <div className="row">
+                        <div>
+                            {display}
+                        </div>
                     </div>
                 </div>
             </div>
