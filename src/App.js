@@ -8,7 +8,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <List employees={data}></List>
+        <List employees={data.employees}></List>
       </div>
     );
   }
