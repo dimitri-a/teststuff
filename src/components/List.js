@@ -14,13 +14,15 @@ export default class List extends Component {
 
         return (
             <div>
-                <h1>{this.props.employees.companyInfo.companyName}</h1>
+                <div className='row main'>
 
-                <h3 className='col-lg-6'>{this.props.employees.companyInfo.companyMotto}</h3>
-                <h3 className='col-lg-6 text-right'>Since {Date(this.props.employees.companyInfo.companyEst)}</h3>
+                    <h1>{this.props.employees.companyInfo.companyName}</h1>
 
+                    <h3 className='col-lg-6'>{this.props.employees.companyInfo.companyMotto}</h3>
+                    <h3 className='col-lg-6 text-right'>Since {Date(this.props.employees.companyInfo.companyEst)}</h3>
+                </div>
                 <div className="row">
-                    <div className="col-md-4">
+                    <div>
                         {display}
                     </div>
                 </div>

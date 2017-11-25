@@ -7,7 +7,7 @@ import data from './sample-data.json'
 class App extends Component {
   render() {
     return (
-      <div className="container">
+      <div>
         <List employees={data}></List>
       </div>
     );
