@@ -20,7 +20,9 @@ export default class Modal extends Component {
         const containerClass = this.props.modalOpened ? 'modal-container modal-container-active' : 'modal-container'
         return (
             <div>
+
                 <div className={containerClass}>
+                    <a onClick={this.toggle} className="close"/>
                     <div className='employee'>
                         <div className="col-lg-4 text-left">
                             <img src={this.props.details.avatar} alt=""/>
@@ -43,6 +45,7 @@ export default class Modal extends Component {
                 </div>
 
                 <div className={coverClass} onClick={this.toggle}></div>
+
             </div>
         )
     }
