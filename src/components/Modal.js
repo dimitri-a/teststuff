@@ -11,11 +11,11 @@ export default class Modal extends Component {
     toggle = () => {
         console.log('toggle');
         //this.props.toggle();
+        
+        console.log('Date(this.props.details.dateJoined).toUTCString()=',new Date(this.props.details.dateJoined).toUTCString('dd-mm-'));
     }
 
     render() {
-
-        console.log('this.props=', this.props);
 
         const coverClass = this.props.modalOpened ? 'modal-cover modal-cover-active' : 'modal-cover'
         const containerClass = this.props.modalOpened ? 'modal-container modal-container-active' : 'modal-container'
@@ -24,13 +24,12 @@ export default class Modal extends Component {
                 <div className={containerClass}>
                     <div className='hidden-xs'>
                         <a onClick={this.toggle} className="close"/>
-                        this is desktop
                         <div className='employee'>
                             <div className="col-lg-4 text-left">
                                 <img src={this.props.details.avatar} alt=""/>
                                 <div>{this.props.details.jobTitle}</div>
                                 <div>{this.props.details.age}</div>
-                                <div>{Date(this.props.details.dateJoined)}</div>
+                                {/*<div>{Date(this.props.details.dateJoined).toUTCString()}</div>*/}
                             </div>
 
                             <div className="col-lg-8 detail">

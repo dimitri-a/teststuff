@@ -19,8 +19,8 @@ export default class Employee extends Component {
         return (
             <div>
                 <div className='hidden-xs' onClick={this.modalToggle}>
-                    <div className='col-lg-4 employee'>
-                        <div className="col-lg-4 text-left">
+                    <div className='col-lg-4 emp-row'>
+                        <div className="col-lg-4">
                             <img src={this.props.details.avatar} alt=""/>
                         </div>
                         <div className="col-lg-8">
