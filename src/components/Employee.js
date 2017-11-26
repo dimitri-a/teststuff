@@ -34,9 +34,6 @@ export default class Employee extends Component {
                             </div>
                         </div>
                     </div>
-
-
-
                     <Modal details={this.props.details} modalOpened={this.state.modalOpened}
                            toggle={this.modalToggle}></Modal>
                 </div>
@@ -50,7 +47,6 @@ export default class Employee extends Component {
                             <div>
                             <span className='name'> {this.props.details.firstName} &nbsp;
                                 {this.props.details.lastName}</span>
-
                             </div>
                             <div>{this.props.details.jobTitle}</div>
                             <div>{this.props.details.age}</div>

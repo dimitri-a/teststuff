@@ -90,14 +90,8 @@ img {
 }
 
 .employee {
-    display:flex;
     border: 1px solid black;
 }
-
-.employee img {
-    height:100%;
-}
-
 
 .col-lg-4 {
     padding-left: 0;
@@ -121,4 +115,13 @@ img {
 
 .space{
     padding:20px;
+}
+
+@media all and (max-width:470px) {
+    .employee {
+        display:flex;
+    }
+    .employee img {
+        height:100%;
+    }
 }
