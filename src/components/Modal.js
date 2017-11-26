@@ -3,17 +3,13 @@ import React, {Component} from 'react';
 export default class Modal extends Component {
     constructor(props) {
         super(props)
-
-
     }
 
-
-    toggle = () => {
-        console.log('toggle');
-        //this.props.toggle();
-        
-        console.log('Date(this.props.details.dateJoined).toUTCString()=',new Date(this.props.details.dateJoined).toUTCString('dd-mm-'));
-    }
+    // toggle = () => {
+    //     console.log('toggle');
+    //
+    //     console.log('Date(this.props.details.dateJoined).toUTCString()=',new Date(this.props.details.dateJoined).toUTCString('dd-mm-'));
+    // }
 
     render() {
 
@@ -25,11 +21,11 @@ export default class Modal extends Component {
                     <div className='hidden-xs'>
                         <a onClick={this.toggle} className="close"/>
                         <div className='employee'>
-                            <div className="col-lg-4 text-left">
+                            <div className="col-lg-4 space">
                                 <img src={this.props.details.avatar} alt=""/>
-                                <div>{this.props.details.jobTitle}</div>
+                                <div className='joined'>{this.props.details.jobTitle}</div>
                                 <div>{this.props.details.age}</div>
-                                {/*<div>{Date(this.props.details.dateJoined).toUTCString()}</div>*/}
+                                <div>{new Date(this.props.details.dateJoined).toLocaleDateString()}</div>
                             </div>
 
                             <div className="col-lg-8 detail">
@@ -44,11 +40,8 @@ export default class Modal extends Component {
                             </div>
                         </div>
                     </div>
-
                 </div>
-
                 <div className={coverClass} onClick={this.toggle}></div>
-
             </div>
         )
     }

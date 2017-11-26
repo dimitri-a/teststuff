@@ -54,7 +54,7 @@ export default class Employee extends Component {
                             </div>
                             <div>{this.props.details.jobTitle}</div>
                             <div>{this.props.details.age}</div>
-                            <div>{Date(this.props.details.dateJoined)}</div>
+                            <div>{new Date(this.props.details.dateJoined).toLocaleDateString()}</div>
                             <div>
                                 {this.props.details.bio.slice(0, 80)}
                             </div>
