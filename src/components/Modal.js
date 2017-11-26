@@ -1,16 +1,6 @@
 import React, {Component} from 'react';
 
 export default class Modal extends Component {
-    constructor(props) {
-        super(props)
-    }
-
-    // toggle = () => {
-    //     console.log('toggle');
-    //
-    //     console.log('Date(this.props.details.dateJoined).toUTCString()=',new Date(this.props.details.dateJoined).toUTCString('dd-mm-'));
-    // }
-
     render() {
 
         const coverClass = this.props.modalOpened ? 'modal-cover modal-cover-active' : 'modal-cover'
@@ -19,7 +9,7 @@ export default class Modal extends Component {
             <div>
                 <div className={containerClass}>
                     <div className='hidden-xs'>
-                        <a onClick={this.toggle} className="close"/>
+                        <button onClick={this.toggle} className="close"/>
                         <div className='employee'>
                             <div className="col-lg-4 space">
                                 <img src={this.props.details.avatar} alt=""/>

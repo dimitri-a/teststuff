@@ -51,13 +51,13 @@ img {
 }
 
 .detail {
-    margin-top: 130px;
+    margin-top: 120px;
 }
 
 .close {
     position: absolute;
     right: 0px;
-    top: -37px;
+    top: -49px;
     width: 32px;
     height: 32px;
     opacity: 0.3;
@@ -90,8 +90,14 @@ img {
 }
 
 .employee {
+    display:flex;
     border: 1px solid black;
 }
+
+.employee img {
+    height:100%;
+}
+
 
 .col-lg-4 {
     padding-left: 0;
@@ -114,5 +120,5 @@ img {
 }
 
 .space{
-    padding:5px;
+    padding:20px;
 }
