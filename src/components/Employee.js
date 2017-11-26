@@ -23,16 +23,20 @@ export default class Employee extends Component {
                         <div className="col-lg-4">
                             <img src={this.props.details.avatar} alt=""/>
                         </div>
-                        <div className="col-lg-8">
+                        <div className="col-lg-8 card-text">
                             <div>
-                            <span className='name'> {this.props.details.firstName} &nbsp;
+                            <span className='name'>
+                                {this.props.details.firstName} &nbsp;
                                 {this.props.details.lastName}</span>
                                 <div>
-                                    {this.props.details.bio.slice(0, 80)}
+                                    {this.props.details.bio.slice(0,70)}
                                 </div>
                             </div>
                         </div>
                     </div>
+
+
+
                     <Modal details={this.props.details} modalOpened={this.state.modalOpened}
                            toggle={this.modalToggle}></Modal>
                 </div>
