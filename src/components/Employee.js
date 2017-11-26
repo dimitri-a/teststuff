@@ -42,11 +42,11 @@ export default class Employee extends Component {
                 </div>
 
                 <div className='visible-xs'>
-                    <div className='col-lg-4 employee'>
-                        <div className="col-lg-4 text-left">
-                            <img src={this.props.details.avatar} alt=""/>
+                    <div className='col-xs-12 employee'>
+                        <div className="col-xs-4">
+                            <img className='' src={this.props.details.avatar} alt=""/>
                         </div>
-                        <div className="col-lg-8">
+                        <div className="col-xs-8">
                             <div>
                             <span className='name'> {this.props.details.firstName} &nbsp;
                                 {this.props.details.lastName}</span>
