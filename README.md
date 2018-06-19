@@ -1,4 +1,4 @@
-WESTPAC CODE CHALLENGE
+CODE CHALLENGE
 
 to install: yarn install
 

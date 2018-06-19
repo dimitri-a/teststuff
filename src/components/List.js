@@ -23,7 +23,7 @@ export default class List extends Component {
 
                 {/*Employee list*/}
                 <div>
-                    <h3>Our Employees</h3>
+                    <h3>Our Emplhjhoyees</h3>
                     <hr/>
                     <div className="row">
                         <div>
